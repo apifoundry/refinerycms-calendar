@@ -14,7 +14,7 @@ module Refinery
                       :featured, :position
 
       delegate :name, :address,
-                :ends_at => :venue,
+                :to => :venue,
                 :prefix => true,
                 :allow_nil => true
 
